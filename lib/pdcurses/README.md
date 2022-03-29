@@ -1,6 +1,9 @@
 # 编译说明
 
-## win
+- `PDCurses` 官方 GitHub 仓库
+  - [https://github.com/wmcbrine/PDCurses](https://github.com/wmcbrine/PDCurses)
+
+## windows
 
 > 参考资料  
 > [https://blog.csdn.net/sinat_29235897/article/details/92850542](https://blog.csdn.net/sinat_29235897/article/details/92850542)  
@@ -10,7 +13,7 @@
   ```
   PLATFORM = X64
   ```
-- 编译命令
+- 执行编译命令
   ```powershell
   # DEBUG 版本
   nmake -f Makefile.vc WIDE=Y UTF8=Y DLL=Y DEBUG=Y
@@ -18,7 +21,7 @@
   # RELEASE 版本
   nmake -f Makefile.vc WIDE=Y UTF8=Y DLL=Y
   ```
-  - 说明
+  - 选项说明
     - `WIDE=Y` 开启宽字符支持
     - `UTF8=Y` 设置为 UTF-8 编码
     - `DLL=Y` 编译 DLL 文件
